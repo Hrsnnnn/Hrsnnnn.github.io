@@ -2372,7 +2372,7 @@ pre .deletion {
   position: relative;
   box-sizing: border-box;
   width: 80%;
-  max-width: 1000px;
+  max-width: 900px;
   height: 100%;
   transition-property: color, background, box-shadow, border-color, max-width, width;
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
@@ -2390,7 +2390,7 @@ pre .deletion {
   }
 }
 .page-container .page-main-content .page-main-content-middle .main-content.has-toc {
-  max-width: 1200px !important;
+  max-width: 1080px !important;
 }
 .page-container .page-main-content .page-main-content-middle .page-main-content-bottom {
   width: 100%;
@@ -3236,7 +3236,7 @@ pre .deletion {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, rgba(247,135,54,0.208) 0%, rgba(54,125,247,0.208) 100%);
+  background: linear-gradient(120deg, rgba(247,135,54,0.063) 0 0%, rgba(54,125,247,0.063) 0 100%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding-top: 2px;
@@ -3249,7 +3249,7 @@ pre .deletion {
   position: relative;
   height: 100%;
   width: 80%;
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3257,7 +3257,7 @@ pre .deletion {
   z-index: 1005;
 }
 .menu-wrapper .menu-content.has-first-screen {
-  max-width: 1200px;
+  max-width: 1080px;
 }
 @media (max-width: 780px) {
   .menu-wrapper .menu-content {
