@@ -735,8 +735,8 @@ body {
   background: var(--background-color);
   font-family: Open Sans, Noto Sans, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
   font-weight: 400;
-  font-size: 15.2px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
@@ -746,15 +746,15 @@ body::-webkit-scrollbar {
 @media (max-width: 780px) {
   html,
   body {
-    font-size: 14.591999999999999px;
-    line-height: 21.119999999999997px;
+    font-size: 15.36px;
+    line-height: 1.44;
   }
 }
 @media (max-width: 500px) {
   html,
   body {
-    font-size: 13.68px;
-    line-height: 19.8px;
+    font-size: 14.4px;
+    line-height: 1.35;
   }
 }
 ::selection {
@@ -834,7 +834,7 @@ button {
 }
 .markdown-body {
   font-family: 'Open Sans', 'Noto Sans', sans-serif, 'Noto Sans SC', sans-serif, sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
 }
 .markdown-body blockquote {
   box-sizing: border-box;
@@ -942,7 +942,7 @@ button {
   .markdown-body h4,
   .markdown-body h5,
   .markdown-body h6 {
-    line-height: 1.25;
+    line-height: 1.44;
   }
 }
 .markdown-body h1 {
@@ -1001,7 +1001,7 @@ button {
 .markdown-body h6 {
   font-size: 1.2rem;
   font-weight: 550;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-top: 2rem;
 }
 @media (max-width: 780px) {
