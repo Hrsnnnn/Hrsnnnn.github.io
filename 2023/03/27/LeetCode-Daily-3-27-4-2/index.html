@@ -314,13 +314,43 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-27 11:08:01</span>
-            <span class="mobile">2023-03-27 11:08</span>
+            <span class="pc">2023-03-27 11:30:58</span>
+            <span class="mobile">2023-03-27 11:30</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/LeetCode/">LeetCode</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/LeetCode/">LeetCode</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/C/">C++</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Algorithm/">Algorithm</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -342,17 +372,17 @@
                 <h3 id="2023-3-27"><a href="#2023-3-27" class="headerlink" title="2023.3.27"></a>2023.3.27</h3><p><strong>Problem No.64: Minimum Path Sum</strong></p>
 <p>这是一个很基本的动态规划问题。</p>
 <p>第一步，首先由于每个元素的值都是正的，证明从左上出发后每一次的移动必须向右走，或者向下走。因为如果向上或者向左走，一定可以找到一条和更小的路径。</p>
-<p>第二步，达到每一个格子的值的方法只能通过其上方或者左方的格子。故建立一个二维数组记录从左上角达到该格子最小的路径和，这个二维数组的每一项可以由数组<code>grid</code>推算出来：</p>
+<p>第二步，达到每一个格子的方法只能通过其上方或者左方的格子。故建立一个二维数组记录从左上角达到该格子最小路径和，这个二维数组的每一项可以由数组<code>grid</code>推算出来：</p>
 <ul>
 <li>左上角的格子是<code>grid[i][j]</code>;</li>
-<li>第一排的格子是<code>sum[i][j-1] + grid[i][j]</code>;</li>
-<li>第一列的格子是<code>sum[i-1][j] + grid[i][j]</code>;</li>
-<li>其他格子是<code>min(sum[i-1][j]+grid[i][j], sum[i][j-1]+grid[i][j]</code>;</li>
+<li>第一排的格子，只能从左边达到，故为<code>sum[i][j-1] + grid[i][j]</code>; </li>
+<li>第一列的格子，只能从上方达到，故为<code>sum[i-1][j] + grid[i][j]</code>;</li>
+<li>其他格子可以从左边或者上方达到，故为<code>min(sum[i-1][j]+grid[i][j], sum[i][j-1]+grid[i][j]</code>;</li>
 </ul>
 <p>第三步，可以对于存储空间进行优化，只用一维的数组即可完成计算。代码如下：</p>
 <div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><figcaption><span>MinPathSum</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">minPathSum</span><span class="params">(vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;&amp; grid)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">sum</span><span class="params">(grid[<span class="number">0</span>].size(), <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;grid.<span class="built_in">size</span>();i++) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;grid[i].<span class="built_in">size</span>();j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(i == <span class="number">0</span> &amp;&amp; j == <span class="number">0</span>) sum[j] = grid[i][j];</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(i == <span class="number">0</span>) sum[j] = sum[j<span class="number">-1</span>] + grid[i][j];</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(j == <span class="number">0</span>) sum[j] = sum[j] + grid[i][j];</span><br><span class="line">                <span class="keyword">else</span> sum[j] = <span class="built_in">min</span>(sum[j]+grid[i][j], sum[j<span class="number">-1</span>]+grid[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum[sum.<span class="built_in">size</span>()<span class="number">-1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div>
 
-<p><strong>Results: Runtime 7 ms Beats 90.29%; Memory 9.6 MB Beats 92.52%;</strong></p>
+<p><strong>Runtime 7 ms, Beats 90.29%; Memory 9.6 MB, Beats 92.52%;</strong></p>
 
             </div>
 
@@ -375,6 +405,22 @@
                 </div>
             
 
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/LeetCode/">#LeetCode</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/C/">#C++</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Algorithm/">#Algorithm</a>&nbsp;
+                        </li>
+                    
+                </ul>
             
 
             
