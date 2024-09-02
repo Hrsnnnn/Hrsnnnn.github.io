@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="HrsnChen">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://Hrsnnnn.github.io/2023/03/27/footgestures/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="Shoe GesturesShoes++: A Smart Detachable Sole for Social Foot-to-foot InteractionIntroductionMiniaturized sensors, advanced wireless and battery technology 可以提供强大的能力。而且脚部动作popular. KickSoul: A Wearabl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FootGestures Paper Sumarization">
+<meta property="og:url" content="https://hrsnnnn.github.io/2023/03/27/FootGestures/index.html">
+<meta property="og:site_name" content="Hrsn&#39;s Blog Here">
+<meta property="og:description" content="Shoe GesturesShoes++: A Smart Detachable Sole for Social Foot-to-foot InteractionIntroductionMiniaturized sensors, advanced wireless and battery technology 可以提供强大的能力。而且脚部动作popular. KickSoul: A Wearabl">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-27T03:48:42.000Z">
+<meta property="article:modified_time" content="2023-05-16T07:37:02.000Z">
+<meta property="article:author" content="Hrsn">
+<meta property="article:tag" content="Research">
+<meta property="article:tag" content="FootGesture">
+<meta property="article:tag" content="Papers">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/hrsnlogo.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/hrsnlogo.png">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/hrsnlogo.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+            FootGestures Paper Sumarization -
+        
+        Hrsn&#39;s Blog
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"hrsnnnn.github.io","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"center","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[""]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/sekiro-light.jpg","dark":"/images/sekiro-dark.jpg"},"title":"I am Hrsn Chen","subtitle":{"text":["Live a life you will remember."],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#fff"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://www.github.com","instagram":"https://www.instagram.com","zhihu":"https://www.zhihu.com","twitter":"https://www.twitter.com","email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"},{"name":"The Nights","artist":"Avicii","url":"/musics/thenights.mp3","cover":"/musics/thenights.jpeg"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":100},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"AboutMe":{"path":"/about","icon":"fa-regular fa-user"},"Categories":{"path":"/categories","icon":"fa-regular fa-link"},"Gallery":{"path":"/masonry","icon":"fa-regular fa-image"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":"Sharing Knowledge and Life","show_on_mobile":true,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/3/13 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Hrsn&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/about"
+                                        >
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUTME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories"
+                                        >
+                                    <i class="fa-regular fa-link fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/masonry"
+                                        >
+                                    <i class="fa-regular fa-image fa-fw"></i>
+                                    GALLERY
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/about"
+                        >
+                            <span>
+                                ABOUTME
+                            </span>
+                            
+                                <i class="fa-regular fa-user fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-regular fa-link fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/masonry"
+                        >
+                            <span>
+                                GALLERY
+                            </span>
+                            
+                                <i class="fa-regular fa-image fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/tags"
+                        >
+                            <span>Tags</span>
+                            <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-center">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">FootGestures Paper Sumarization</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/sekiro.jpeg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">HrsnChen</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1"></span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-03-27 11:48:42</span>
+        <span class="mobile">2023-03-27 11:48:42</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-05-16 15:37:02</span>
+            <span class="mobile">2023-05-16 15:37:02</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Research/">Research</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/FootGesture/">FootGesture</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Papers/">Papers</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="Shoe-Gestures"><a href="#Shoe-Gestures" class="headerlink" title="Shoe Gestures"></a>Shoe Gestures</h2><h3 id="Shoes-A-Smart-Detachable-Sole-for-Social-Foot-to-foot-Interaction"><a href="#Shoes-A-Smart-Detachable-Sole-for-Social-Foot-to-foot-Interaction" class="headerlink" title="Shoes++: A Smart Detachable Sole for Social Foot-to-foot Interaction"></a>Shoes++: A Smart Detachable Sole for Social Foot-to-foot Interaction</h3><h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>Miniaturized sensors, advanced wireless and battery technology 可以提供强大的能力。而且脚部动作popular.</p>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>KickSoul: A Wearable System for Foot Interactions with Digital Devices </summary>
+              <div class='content'>
+              <p><strong>Point: Popularization of foot interaction.</strong></p><p><a class="link"   target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/2815585.2815730" >https://dl.acm.org/doi/pdf/10.1145/2815585.2815730 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><ul><li>Origin Article: Enabled by the miniaturized sensors, advanced wireless and battery technologies, smart soles have been integrated into our lives alongside <u>the popularization of foot interaction</u>.</li><li>Abstract: KickSoul is a wearable device that maps natural foot movements into inputs for digital devices. It consists of an insole with embedded sensors that track movements and trigger actions in devices that surround us. We present a novel approach to use our feet as input devices in mobile situations when our hands are busy. We analyze the foot’s natural movements and their meaning before activating an action.</li><li>Summary: <ul><li>是一个设备，主要能力是track脚步动作且激活周围设备。场景是在我们手部busy的时候能够用脚作为输入;</li><li>自然的脚部语义分为两类：让物体靠近自己因为需要使用 或 让物体远离自己因为不需要继续用;(设备只支持这两种动作)<ul><li>让物体靠近：保存文档；</li><li>让物体远离：删除文档;</li></ul></li><li>主要贡献：自然脚部动作map到设备、软件硬件的搭建、一系列应用;</li><li>设备：6轴的imu，将imu数据蓝牙传输到手机上，手机是脚设备和<u>最近设备</u>的桥梁;</li><li>方法：对于加速度做<code>low-pass filter</code>后利用加速度和陀螺仪进行计算;</li><li>场景：<ul><li>回家拿着东西，脚部快速开灯。</li></ul></li></ul></li></ul>
+              </div>
+            </details>
+
+<p>现在的研究中，脚部的动作可以作为输入和控制计算机设备。控制的设备分为三种：Computer Devices, Activity Trackers, Physiological State Monitoring.</p>
+<p>对于Computer Devices:</p>
+<details class="red" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Gaze and Foot Input: Toward a Rich and Assistive Interaction Modality </summary>
+              <div class='content'>
+              <p><strong>Point: A input and control method for computer devices.</strong></p><p><a class="link"   target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/2876456.2876462" >https://dl.acm.org/doi/pdf/10.1145/2876456.2876462 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><ul><li>Origin Article: They can serve as a supplementary input and control method for <u>computing devices</u>, activity trackers , or physiological state monitoring platforms.</li><li>Abtract:  Gaze input in conjunction with traditional solutions to the “Midas Touch” problem, dwell time or a blink, is not matured enough to be widely adopted. In this regard, we present our preliminary work, a framework that achieves precise “point and click” interactions in a desktop environment through combining the gaze and foot interaction modalities. The framework comprises of an eye tracker and a foot-operated quasi-mouse that is wearable. The system evaluation shows that our gaze and foot interaction framework performs as good as a mouse (time and precision) in the majority of tasks. Furthermore, this dissertation work focuses on the goal of realizing gaze-assisted interaction as a primary interaction modality to substitute conventional mouse and keyboard-based interaction methods. In addition, we consider some of the challenges that need to be addressed, and also present the possible solutions toward achieving our goal.</li><li>Summary:<ul><li>是一个交互模式，主要能力是配合Gaze和Foot实现一个Quasi Mouse, 实现精确的<code>point and click</code>; </li><li>Foot只是用来点击;</li></ul></li><li>Related Work:<ul><li>Gaze-supported Foot Interaction in Zoomable Information Spaces: Proving gaze and Foot can be combined, it’s promising.<ul><li>目标是结合脚步和gaze完成seamless的zoom和pan，能够很好的完成zoomable任务;</li><li>gaze的优势是precise，而脚的优势是自由;</li><li>Google Earth是能很好体现zoomable任务的应用;</li></ul></li><li>Bottom-up Investigation: Human Activity Recognition Based on Feet Movement and Posture Information<ul><li>HAR: Human Activity Recognition is active and fast growing field. (Tracking whole body activity)</li><li>Related Usage for HAR:Fall risk assessment for elderly patients and Tracking users’ dancing step.(Both related work)</li><li>Two main methods: image processing and wearable sensors.<ul><li>Image processing: expensive and privacy concern.</li><li>Wearable Sensors.</li></ul></li><li>这篇文章讲的大多是全身的activity，描述偏向整个人的状态；而我们的目标只关注feet gesture的识别。本文是一片对于HAR识别的文献综述。</li><li>本文提到的HAR:<ul><li>Common: walking, standing, running, sitting, slope walking, walking of elderly, car-passenger, bus-passenger cycling, car-driving.</li><li>Special: ball tap, heel tap, forward step, backward step.</li></ul></li></ul></li></ul></li></ul>
+              </div>
+            </details>
+
+<p>Prior works of foot gestures mainly focused on single person gestures, few works of foot gestures of multiple persons is studied.</p>
+<p>Steps we take:</p>
+<ul>
+<li>focus group study to explore the design space of social foot-to-foot gestures among two or three people. <ul>
+<li>One person foot gesturing as units of foot gesture.</li>
+<li>Multiple persons gesturing to each other.</li>
+<li>Finally: 11 solo, 10 two-people, 10 three-people gestures.</li>
+<li>From a user-centered point of view, foot-to-foot gestures in a group of two to three people create a collaborative environment and enhance emotional and social experience.</li>
+</ul>
+</li>
+<li>Designed and fabricated a smart sole to identify and classify foot gestures<ul>
+<li>Design strategy: lexible and compatible with different kind of shoes, detachable with social appropriate way, removable eletronic parts, easy to charge and replace.</li>
+<li><strong>1 micro controller in each sole, 3 imu in each sole</strong>.</li>
+<li>The recognition of foot gestures is performed externally by a hierarchical machine learning model based on a temporal convolutional neural network.</li>
+<li>Evaluation on 18 participants wearing different type of shoes.</li>
+</ul>
+</li>
+<li>Overall wearability of shoes++ out of the lab.<ul>
+<li>Remain attached and eletrically functional for 2 hours.</li>
+<li>User feel at ease with people around.</li>
+<li>Detachabilty, comfort and compatability of Shoes++ met needs of daily use.</li>
+</ul>
+</li>
+</ul>
+<p>Main feature of shoes++ is can recognize foot gestures from multiple users simultaneously. (<strong>Multi-user collaboration and communication</strong>)</p>
+<p>所以由此就可以设计出一个新的交互模式，就是多人利用脚去合作的模式，而且有一定的交互空间。</p>
+<p>本论文主要的贡献为四点：foot-to-foot gesture vocabulary, IMU-mounted sole prototype, Gesture recognition, Validate wearablity.</p>
+<h4 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h4><h5 id="Smart-Shoes-and-Accessories-for-Foot-Interaction"><a href="#Smart-Shoes-and-Accessories-for-Foot-Interaction" class="headerlink" title="Smart Shoes and Accessories for Foot Interaction"></a>Smart Shoes and Accessories for Foot Interaction</h5><p>Foot Gestures when handsfree:</p>
+<ul>
+<li>Gaze and foot as a mouse.</li>
+<li>Virtual football game.</li>
+</ul>
+<h3 id="Related-Articles"><a href="#Related-Articles" class="headerlink" title="Related Articles"></a>Related Articles</h3><h4 id="Foot-Gestures"><a href="#Foot-Gestures" class="headerlink" title="Foot Gestures"></a>Foot Gestures</h4><ul>
+<li>(Gesture mapping) Putting Your Best Foot Forward: Investigating Real-World Mappings for Foot-based Gestures. (Until “Result”)</li>
+</ul>
+<h4 id="With-Camera"><a href="#With-Camera" class="headerlink" title="With Camera"></a>With Camera</h4><ul>
+<li>Foot Motion Sensing: Augmented Game Interface Based on Foot Interaction for Smartphone</li>
+</ul>
+<h4 id="HandsFree"><a href="#HandsFree" class="headerlink" title="HandsFree"></a>HandsFree</h4><ul>
+<li>GazeTap: Towards Hands-Free Interaction in the Operating Room. (Abstract)<ul>
+<li>Eye-tracking and foot tap.</li>
+</ul>
+</li>
+<li>Foot Motion Sensing: Augmented Game Interface Based on Foot Interaction for Smartphone.</li>
+</ul>
+<h4 id="Important-Articles"><a href="#Important-Articles" class="headerlink" title="Important Articles"></a>Important Articles</h4><ul>
+<li>Bottom-up Investigation: Human Activity Recognition Based on Feet Movement and Posture Information. (Introduction)<ul>
+<li>Recognize running, standing, sitting, walking and slope walking (other basic activities).</li>
+</ul>
+</li>
+</ul>
+<h4 id="Recognition-of-Common-Movement-Activities-using-IMU"><a href="#Recognition-of-Common-Movement-Activities-using-IMU" class="headerlink" title="Recognition of Common Movement Activities using IMU"></a>Recognition of Common Movement Activities using IMU</h4><ul>
+<li>Foot-mounted inertial measurement unit for activity classification. (Unread)</li>
+<li>Decision-tree-based human activity classification algorithm using single-channel foot-mounted gyroscope. (Unread)</li>
+<li>Saltate!: a sensor-based system to support dance beginners. (Unread)</li>
+</ul>
+<h4 id="Gait-Phase"><a href="#Gait-Phase" class="headerlink" title="Gait Phase"></a>Gait Phase</h4><ul>
+<li>Development of gait segmentation methods for wearable foot pressure sensors. (Unread)</li>
+<li>A gait monitoring system based on air pressure sensors embedded in a shoe. (Unread)</li>
+<li>Gait analysis: normal and pathological function. (Unread)</li>
+<li>An Overview of Smart Shoes in the Internet of Health Things: Gait and Mobility Assessment in Health Promotion and Disease Monitoring. (Until 2.1.1)<ul>
+<li>Smart shoes can be envisioned to serve as <strong>pervasive wearable computing systems</strong> that enable innovative solutions and services for the promotion of healthy living and the transformation of health care.</li>
+<li>人们日常走路占用了很多时间，所以采集出来可以服务于医疗。智能鞋的优势是放在predefined positions传感器、步态是规律性很强的活动能够进行分析、非侵入式和non-stigmatizing方法。</li>
+<li>Mobility health. 很多健康相关的问题需要在运动非静止中进行观测。</li>
+</ul>
+</li>
+</ul>
+<p>Algothms:</p>
+<ul>
+<li><strong>Assessment of walking features from foot inertial sensing.</strong> (Unread)</li>
+<li>Gait phase detection and discrimination between walking–jogging activities using hidden markov models applied to foot motion data from a gyroscope. (Unread)</li>
+<li>Stride segmentation during free walk movements using multi-dimensional subsequence dynamic time warping on inertial sensor data. (Unread)</li>
+</ul>
+<p>Gait Features (Mainly from An Overview of Smart Shoes in the Internet of Health Things 2.2.3 and 2.2.4):</p>
+<ul>
+<li>Accuracy, sensitivity and robustness of five different methods for the estimation of gait temporal parameters using a single inertial sensor mounted on the lower trunk. (Unread)</li>
+<li>Temporal feature estimation during walking using miniature accelerometers: An analysis of gait improvement after hip arthroplasty. (Unread)</li>
+</ul>
+<h4 id="Pervasive-Wearable-Computing-System-and-Internet-of-Things"><a href="#Pervasive-Wearable-Computing-System-and-Internet-of-Things" class="headerlink" title="Pervasive Wearable Computing System and Internet of Things"></a>Pervasive Wearable Computing System and Internet of Things</h4><ul>
+<li>An Overview of Smart Shoes in the Internet of Health Things: Gait and Mobility Assessment in Health Promotion and Disease Monitoring. (Above)</li>
+</ul>
+<h4 id="Weak-Related-Works"><a href="#Weak-Related-Works" class="headerlink" title="Weak Related Works"></a>Weak Related Works</h4><p>Physiological state: Review on wearables to monitor foot temperature in diabetic patients. (Unread)</p>
+<p>BodySensor Networks (Wireless data transfer, energy comsumption management):</p>
+<ul>
+<li>Body area networks: A survey. [<a class="link"   target="_blank" rel="noopener" href="https://link.springer.com/article/10.1007/s11036-010-0260-8]" >https://link.springer.com/article/10.1007/s11036-010-0260-8] <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Enabling effective programming and flexible management of efficient body sensor network applications.</li>
+<li>From modeling to implementation of virtual sensors in body sensor networks.</li>
+</ul>
+<p>Energy Management:</p>
+<ul>
+<li>Pedestrian localization based on a shoe-integrated energy autarkic mobile cyber-physical system.</li>
+<li>(Energy-aware software) Approaching the accuracy–cost conflict in embedded classification system design.</li>
+<li>(Harware Consumption) Considerations on design optimization criteria for windows providing low energy consumption and high visual comfort.</li>
+<li>(Application Context: Lazy Mode when no data) Energy efficient multi-function home gateway in always-on home environment.</li>
+<li>(Medical use should be continuous) Awearable health-monitoring system for people at risk: Methodology and modeling.</li>
+<li>(Harvest Energy from context)<ul>
+<li>How many wi-fi aps does it take to light a lightbulb?</li>
+<li>Energy harvesting from hybrid indoor ambient light and thermal energy sources for enhanced performance ofwireless sensor nodes.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Better-Understanding-of-Foot-Gestures-An-Elicitation-Study"><a href="#Better-Understanding-of-Foot-Gestures-An-Elicitation-Study" class="headerlink" title="Better Understanding of Foot Gestures: An Elicitation Study"></a>Better Understanding of Foot Gestures: An Elicitation Study</h3><p>Mattress based sensing, based on 2d platform.</p>
+<p>Standing before screen, standing on projectile screen, sitting before screen.</p>
+<h2 id="Knowledge-Learnt"><a href="#Knowledge-Learnt" class="headerlink" title="Knowledge Learnt"></a>Knowledge Learnt</h2><ul>
+<li>Midas Touch 做的动作是无意的，但是会触发某些指令。(Distinguish natural and intended interactions.)</li>
+<li>Focus Group Study 对于一组被试者进行访谈的试验方法，应用实现定义好的问题集对于目标问题进行讨论，从而获得灵感。相比于单独访谈更自然，相对于大型调查难度更低。</li>
+<li>Participatory Design 尝试让所有利益相关者都能够得到满足的设计方法。</li>
+</ul>
+<p>transducer(传感器), behoove(理应), dissipation(耗散), infrared(红外线),</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> FootGestures Paper Sumarization</li>
+        <li><strong>Author:</strong> HrsnChen</li>
+        <li><strong>Created at
+                :</strong> 2023-03-27 11:48:42</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-05-16 15:37:02
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://hrsnnnn.github.io/2023/03/27/FootGestures/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Research/">#Research</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/FootGesture/">#FootGesture</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Papers/">#Papers</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2023/09/24/Thoughts-After-Leaving-Tencent-Temporarily/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Thoughts After Leaving Tencent. Temporarily?</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/03/27/LeetCode-Daily-3-27-4-2/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">LeetCode Daily (2023.3.27 to 4.2)</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://waline-bcqs7vthf-hrsnnnn.vercel.app/',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">FootGestures Paper Sumarization</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Shoe-Gestures"><span class="nav-text">Shoe Gestures</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Shoes-A-Smart-Detachable-Sole-for-Social-Foot-to-foot-Interaction"><span class="nav-text">Shoes++: A Smart Detachable Sole for Social Foot-to-foot Interaction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Related-Articles"><span class="nav-text">Related Articles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Better-Understanding-of-Foot-Gestures-An-Elicitation-Study"><span class="nav-text">Better Understanding of Foot Gestures: An Elicitation Study</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Knowledge-Learnt"><span class="nav-text">Knowledge Learnt</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">HrsnChen</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        5 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.0</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+    
+<script src="/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/js/plugins/masonry.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/libs/anime.min.js"></script>
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+    <div id="aplayer"></div>
+
+<script src="/js/libs/APlayer.min.js"></script>
+
+
+<script src="/js/plugins/aplayer.js"></script>
+
+
+</body>
+</html>
